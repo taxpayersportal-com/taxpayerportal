@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRA DOCUMENT CHECKER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* This is the header with the logo */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* space between logo and GRA text */
+        }
+        .header-left img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+        }
+        .close {
+            cursor: pointer;
+        }
+        .valid-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #1a9e4e;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .check-icon {
+            background-color: #1a9e4e;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+        .details {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            row-gap: 18px;
+            font-size: 16px;
+        }
+        .label {
+            color: #666;
+        }
+        .value {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Card 1: Title -->
+    <div class="card header">
+        <div class="header-left">
+            <!-- Your GRA Logo Here -->
+            <img src="Ghana_Revenue_Authority_logo_(new).jpg" alt="GRA Logo">
+            <span>GRA DOCUMENT CHECKER</span>
+        </div>
+        <span class="close">X</span>
+    </div>
+
+    <!-- Card 2: Valid Document -->
+    <div class="card valid-box">
+        <div>VALID<br>DOCUMENT</div>
+        <div class="check-icon">✓</div>
+    </div>
+
+    <!-- Card 3: Details -->
+    <div class="card">
+        <div class="details">
+            <div class="label">Name</div>
+            <div class="value">DEN RANYA AUTOMOTIVE SERVICE</div>
+
+            <div class="label">Status</div>
+            <div class="value">VALID DOCUMENT</div>
+
+            <div class="label">Document type:</div>
+            <div class="value">TAX CLEARANCE CERTIFICATE</div>
+
+            <div class="label">Purpose:</div>
+            <div class="value">TO SUPPORT MY VISA APPLICATION</div>
+
+            <div class="label">Document ID</div>
+            <div class="value">HVXQ26823436</div>
+
+            <div class="label">Expired On</div>
+            <div class="value">Nov 08 2026</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
